@@ -20,10 +20,17 @@ function Counter() {
   return (
     <div>
       <div>
+        <button onClick={() => setStep(c=>c-1)}>-</button>
+        <span>Step: {step}</span>
+        <button onClick={() => setStep(c=>c+1)}>+</button>
+      </div>
+
+      <div>
         <button onClick={() => setCount(c=>c-1)}>-</button>
         <span>Count: {count}</span>
         <button onClick={() => setCount(c=>c+1)}>+</button>
       </div>
+
       <p>
         <span>
           {count === 0 
