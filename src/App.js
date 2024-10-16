@@ -13,6 +13,12 @@ export default function App() {
 function Counter() {
   const [count, seCount] = useState(0);
 
-  return <div>TEST</div>;
+  return (
+    <div>
+      <div>
+        <span>Count: {count}</span>
+      </div>
+    </div>
+  );
 }
 
