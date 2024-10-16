@@ -10,11 +10,8 @@ export default function App() {
 }
 
 function Counter() {
-  return (
-    <div 
-    TEST
-    </div>
-  );
+  const [count, seCount] = useState();
+
+  return <div>TEST</div>;
 }
 
-export default App;
