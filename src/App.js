@@ -13,7 +13,8 @@ export default function App() {
 function Counter() {
   const [count, seCount] = useState(0);
 
-  const date = new Date();
+  const date = new Date("october 14 2024");
+  date.setDate(date.getDate + count);
 
   return (
     <div>
